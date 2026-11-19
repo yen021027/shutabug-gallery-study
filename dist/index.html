@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shutabug — Gallery Study</title>
+  <meta name="description" content="An interactive gallery study of the digital paintings of Mayowa Alabi.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="catalog.js" defer></script>
+  <script src="editions.js" defer></script>
+  <script src="profile.js" defer></script>
+  <script src="gallery.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <header>
+    <a class="brand" href="#/" aria-label="Shutabug home"><img src="assets/logo.svg" width="41" height="34" alt=""></a>
+    <button class="mobile-menu" aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav id="navigation" aria-label="Main"><a href="#/">Index</a><a href="#/shop">Shop</a><a href="#/info">Info</a><a href="#/auctions">Auctions</a><button data-act="help">Help</button></nav>
+    <div class="actions">
+      <button class="search-trigger" data-act="search" aria-label="Search"><i data-icon="search"></i><span>Search</span><kbd>Ctrl K</kbd></button>
+      <select id="currency" aria-label="Display currency"><option>USD</option><option>GBP</option><option>NGN</option><option>EUR</option><option>ZAR</option><option>KES</option><option>SAR</option><option>CAD</option></select>
+      <button data-act="theme" aria-label="Switch theme"><i data-icon="theme"></i></button>
+      <a href="#/saved" aria-label="Saved prints"><i data-icon="saved"></i></a>
+      <a class="account" href="https://shutabug.com/sign-in" target="_blank" rel="noopener" aria-label="Sign in on the original Shutabug website"><i data-icon="user"></i></a>
+      <button data-act="bag" aria-label="Shopping bag"><i data-icon="bag"></i><span id="bag-count">(0)</span></button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer><span>© Shutabug · Mayowa Alabi</span><div><a href="https://x.com/shutabug">X</a><a href="https://instagram.com/shuta.bug">Instagram</a><a href="https://tiktok.com/@shutabug">TikTok</a></div><small>Independent gallery study · <a href="https://shutabug.com/">Original site</a></small></footer>
+  <dialog id="panel" aria-labelledby="panel-title"><div id="panel-body"></div><button class="close" aria-label="Close dialog" data-act="close">×</button></dialog>
+  <aside id="postcards" hidden aria-labelledby="postcards-title">
+    <button class="close" aria-label="Dismiss newsletter" data-act="dismiss-news">×</button>
+    <span class="micro muted">Newsletter</span>
+    <h2 id="postcards-title">Postcards from Lagos</h2>
+    <p>Studio news, print releases and auction announcements from Mayowa Alabi.</p>
+    <a href="https://shutabug.com/" target="_blank" rel="noopener">Subscribe on the artist’s site <span aria-hidden="true">↗</span></a>
+  </aside>
+</body>
+</html>
